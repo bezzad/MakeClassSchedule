@@ -1,0 +1,9 @@
+D:\MakeClassSchedule\DisconnectDB\bin\x86\Debug\DisconnectDB.exe
+D:\MakeClassSchedule\DisconnectDB\bin\x86\Debug\DisconnectDB.pdb
+D:\MakeClassSchedule\DisconnectDB\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MakeClassSchedule\DisconnectDB\obj\x86\Debug\DisconnectDB.DisconnectForm.resources
+D:\MakeClassSchedule\DisconnectDB\obj\x86\Debug\DisconnectDB.Properties.Resources.resources
+D:\MakeClassSchedule\DisconnectDB\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\MakeClassSchedule\DisconnectDB\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\MakeClassSchedule\DisconnectDB\obj\x86\Debug\DisconnectDB.exe
+D:\MakeClassSchedule\DisconnectDB\obj\x86\Debug\DisconnectDB.pdb

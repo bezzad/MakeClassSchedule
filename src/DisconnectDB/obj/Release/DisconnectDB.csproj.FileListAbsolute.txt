@@ -1,0 +1,7 @@
+D:\Send Projects\MakeClassSchedule\src\DisconnectDB\bin\Release\DisconnectDB.exe
+D:\Send Projects\MakeClassSchedule\src\DisconnectDB\bin\Release\DisconnectDB.pdb
+D:\Send Projects\MakeClassSchedule\src\DisconnectDB\obj\Release\DisconnectDB.DisconnectForm.resources
+D:\Send Projects\MakeClassSchedule\src\DisconnectDB\obj\Release\DisconnectDB.Properties.Resources.resources
+D:\Send Projects\MakeClassSchedule\src\DisconnectDB\obj\Release\DisconnectDB.csproj.GenerateResource.Cache
+D:\Send Projects\MakeClassSchedule\src\DisconnectDB\obj\Release\DisconnectDB.exe
+D:\Send Projects\MakeClassSchedule\src\DisconnectDB\obj\Release\DisconnectDB.pdb

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="UserPass" Class="LINQ_UserPassDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\UserPass.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True" SettingsObjectName="MakeClassSchedule.Properties.Settings" SettingsPropertyName="UserPassConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.User_Password" Member="User_Passwords">
+    <Type Name="User_Password">
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordHint" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Modifiers" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.DeleteUserPass" Method="DeleteUserPass">
+    <Parameter Name="User" Parameter="user" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.EditUserPass" Method="EditUserPass">
+    <Parameter Name="User" Parameter="user" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Pass" Parameter="pass" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Hint" Parameter="hint" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Modifiers" Parameter="modifiers" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SaveUserPass" Method="SaveUserPass">
+    <Parameter Name="User" Parameter="user" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Pass" Parameter="pass" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Modifiers" Parameter="modifiers" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Hint" Parameter="hint" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

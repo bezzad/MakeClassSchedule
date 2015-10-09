@@ -1,0 +1,439 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Genetic Algorithm Start</TITLE>
+<META content="text/html; charset=UTF-8" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 8.00.7600.16722"><LINK rel=stylesheet 
+href="_template.css"></HEAD>
+<BODY>
+<DIV id=bannerrow1>
+<TABLE class=bannerparthead>
+  <TBODY>
+  <TR id=hdr>
+    <TD class=runninghead noWrap><IMG 
+src="HelpHeader.png"></TD></TR></TBODY></TABLE></DIV>
+<DIV>
+<HR id=0>
+</DIV>
+<P>
+<DIV>
+<UL><FONT color=#008080 size=5 face=Andalus><STRONG>Genetic Algorithm 
+  Start</STRONG></FONT></UL>
+<UL><STRONG><FONT color=#008080 size=5 face=Andalus></FONT></STRONG><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span></SPAN></SPAN><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span></SPAN></SPAN><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span></SPAN></SPAN><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN class=hps 
+  title="Click for alternate translations"><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN title="Click for alternate translations"><FONT 
+  size=2 face=Verdana>If the class data is available, then you can run the 
+  algorithm for solve class schedule 
+  problem.</FONT></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></UL>
+<UL><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN class=hps 
+  title="Click for alternate translations"><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN 
+  title="Click for alternate translations"></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN title="Click for alternate translations"><FONT 
+  size=2 face=Verdana>In first, value of G.A Fitness is zero. but after running 
+  the G.A this value will increase and closed to number 1 (best fitness). 
+  </FONT></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>
+  <DIV><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN title="Click for alternate translations"><FONT 
+  size=2 face=Verdana>* G.A is acronym of Genetic 
+  Algorithm.<BR><BR></FONT></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></DIV>
+  <DIV><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN title="Click for alternate translations"><FONT 
+  size=2 face=Verdana>By increasing number of algorithm generation, you'll see 
+  that fitness value's of the results obtained in the case that an optimal 
+  approaches (Best Fitness = 1) 
+  .</FONT></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></DIV>
+  <DIV><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN title="Click for alternate translations"><FONT 
+  size=2 
+  face=Verdana></FONT></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>&nbsp;</DIV>
+  <DIV><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN title="Click for alternate translations"><FONT 
+  size=2 face=Verdana><IMG 
+  src="StartAlgorithmForm_empty.jpg"></FONT></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></DIV>
+  <DIV><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN title="Click for alternate translations"><FONT 
+  size=2 
+  face=Verdana></FONT></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>&nbsp;</DIV>
+  <DIV><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN title="Click for alternate translations"><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN title="Click for alternate translations"><FONT 
+  size=2 face=Verdana>* In Result forms,&nbsp;classification and distributing 
+  data&nbsp;on the rooms are 
+  done.</FONT></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></DIV>
+  <DIV><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN title="Click for alternate translations"><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN title="Click for alternate translations"><FONT 
+  size=2 face=Verdana>* Under Start buttons, shows the amount of main memory 
+  consumption in every 
+  time.</FONT></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></DIV>
+  <DIV><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN title="Click for alternate translations"><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN title="Click for alternate translations"><FONT 
+  size=2 
+  face=Verdana><BR></DIV></FONT></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>
+  <DIV><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN title="Click for alternate translations"><FONT 
+  size=2 face=Verdana>For start the solving problem process please click on 
+  Start button to running 
+  algorithm.</FONT></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></DIV>
+  <DIV><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN 
+  title="Click for alternate translations"></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>&nbsp;</DIV>
+  <DIV><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN title="Click for alternate translations"><IMG 
+  src="StartAlgorithmForm_Started.jpg"><BR></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></DIV>
+  <DIV><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN title="Click for alternate translations"><FONT 
+  size=2 face=Verdana><BR>* You can see the solving problem steps as the 
+  graphical and real time. To change this feature, see&nbsp;Tools and 
+  Setting<IMG 
+  src="app.png">.</FONT></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></DIV>
+  <DIV><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN title="Click for alternate translations"><FONT 
+  size=2 
+  face=Verdana></FONT></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>&nbsp;</DIV>
+  <DIV><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN title="Click for alternate translations"><FONT 
+  size=2 face=Verdana>After running G.A you can get the process suspended<FONT 
+  face=Arial> </FONT>or stopped. But for change class schedule data or show it, 
+  first save or checked the "Save classroom data when the Algorithm state is 
+  Stopped" item, in Tools and Setting form. For save the solution after stopping 
+  process by the stop button, you can see the pause button change to save 
+  button:<BR><BR></FONT></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></DIV>
+  <DIV><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN title="Click for alternate translations"><FONT 
+  size=2 face=Verdana><IMG 
+  src="StartAlgorithmForm_Stopped.jpg"><BR><BR></FONT></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></DIV>
+  <DIV><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN title="Click for alternate translations"><FONT 
+  size=2 face=Verdana>Then click on&nbsp;"Save"&nbsp;that this operation can 
+  do.</FONT></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></DIV>
+  <DIV><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN title="Click for alternate translations"><FONT 
+  size=2 
+  face=Verdana></FONT></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>&nbsp;</DIV>
+  <DIV><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 16px 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 13px" 
+  class=Apple-style-span><SPAN 
+  style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" 
+  class=Apple-style-span><SPAN 
+  style="FONT-FAMILY: arial, sans-serif; FONT-SIZE: 16px" 
+  class=Apple-style-span><SPAN 
+  title="Click for alternate translations"></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>&nbsp;</DIV>
+  <DIV>
+  <HR>
+  </DIV>
+  <DIV class=footer>
+  <P>&nbsp;Copyright ©2011 <A href="mailto:Behzad.khosravifar@gmail.com" 
+  target=_blank>Behzad.khosravifar</A> All Rights Reserved. 
+</P></DIV></UL></DIV></BODY></HTML>

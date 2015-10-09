@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{78E81624-EF41-4EC6-B47A-97F3307C0E9B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MakeClassSchedule</RootNamespace>
+    <AssemblyName>MakeClassSchedule</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>IconButton.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <StartupObject>MakeClassSchedule.Program</StartupObject>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>7A61CCB58124A2BF70EBB2925846D64AA4B85FBE</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>MakeClassSchedule_1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\MakeClassSchedule.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\MakeClassSchedule.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DisconnectDB, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DisconnectDB\bin\Debug\DisconnectDB.exe</HintPath>
+    </Reference>
+    <Reference Include="GemBox.Spreadsheet, Version=33.1.30.1060, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL" />
+    <Reference Include="SpPerfChart, Version=1.0.2595.43101, Culture=neutral, PublicKeyToken=5f66223a893f5e2f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\SpPerfChart.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddGroupsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddGroupsForm.Designer.cs">
+      <DependentUpon>AddGroupsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProfessorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProfessorsForm.Designer.cs">
+      <DependentUpon>AddProfessorsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Algorithm\Algorithm.cs" />
+    <Compile Include="Algorithm\Configuration.cs" />
+    <Compile Include="Algorithm\Course.cs" />
+    <Compile Include="Algorithm\CourseClass.cs" />
+    <Compile Include="PerformanceCounterControls\Chart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PerformanceCounterControls\Chart.designer.cs">
+      <DependentUpon>Chart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerformanceCounterControls\PerformanceCounterChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PerformanceCounterControls\PerformanceCounterChart.designer.cs">
+      <DependentUpon>PerformanceCounterChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerformanceCounterControls\PerformanceCounterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerformanceCounterControls\PerformanceCounterForm.designer.cs">
+      <DependentUpon>PerformanceCounterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerformanceCounterControls\PerformanceCounters.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PerformanceCounterControls\PerformanceCounters.designer.cs">
+      <DependentUpon>PerformanceCounters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerformanceCounterControls\VerticalLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PerformanceCounterControls\VerticalProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProcessorAffinityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessorAffinityForm.Designer.cs">
+      <DependentUpon>ProcessorAffinityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultControls\ChangeRoomsDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultControls\ChangeRoomsDataForm.Designer.cs">
+      <DependentUpon>ChangeRoomsDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultControls\CheckListCellsTextDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultControls\CheckListCellsTextDataForm.Designer.cs">
+      <DependentUpon>CheckListCellsTextDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultControls\GeneticAlgorithmSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultControls\GeneticAlgorithmSettingForm.Designer.cs">
+      <DependentUpon>GeneticAlgorithmSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultControls\OneFieldOfRoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultControls\OneFieldOfRoomForm.Designer.cs">
+      <DependentUpon>OneFieldOfRoomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultControls\ResultSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultControls\ResultSettingForm.Designer.cs">
+      <DependentUpon>ResultSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultControls\ShowClassroomsScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultControls\ShowClassroomsScheduleForm.Designer.cs">
+      <DependentUpon>ShowClassroomsScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultControls\ShowGroupsScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultControls\ShowGroupsScheduleForm.Designer.cs">
+      <DependentUpon>ShowGroupsScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultControls\ShowProfessorsScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultControls\ShowProfessorsScheduleForm.Designer.cs">
+      <DependentUpon>ShowProfessorsScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpannedDataGridView\CreateDataGridViews.cs">
+    </Compile>
+    <Compile Include="Algorithm\Professor.cs" />
+    <Compile Include="Algorithm\Room.cs" />
+    <Compile Include="Algorithm\Schedule.cs" />
+    <Compile Include="Algorithm\StudentsGroup.cs" />
+    <Compile Include="BranchForCourseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BranchForCourseForm.Designer.cs">
+      <DependentUpon>BranchForCourseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BranchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BranchForm.Designer.cs">
+      <DependentUpon>BranchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BranchTermSchemeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BranchTermSchemeForm.Designer.cs">
+      <DependentUpon>BranchTermSchemeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassForm.Designer.cs">
+      <DependentUpon>ClassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CourseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CourseForm.Designer.cs">
+      <DependentUpon>CourseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmailDetection.cs" />
+    <Compile Include="GroupsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupsForm.Designer.cs">
+      <DependentUpon>GroupsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LINQ.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PorfessorInfoCompiler.cs" />
+    <Compile Include="ProfessorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfessorForm.Designer.cs">
+      <DependentUpon>ProfessorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfScheduleForm.Designer.cs">
+      <DependentUpon>ProfScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="app.config" />
+    <None Include="LINQ.dbml.layout">
+      <DependentUpon>LINQ.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddGroupsForm.resx">
+      <DependentUpon>AddGroupsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProfessorsForm.resx">
+      <DependentUpon>AddProfessorsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BranchForCourseForm.resx">
+      <DependentUpon>BranchForCourseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BranchForm.resx">
+      <DependentUpon>BranchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BranchTermSchemeForm.resx">
+      <DependentUpon>BranchTermSchemeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassForm.resx">
+      <DependentUpon>ClassForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourseForm.resx">
+      <DependentUpon>CourseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupsForm.resx">
+      <DependentUpon>GroupsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerformanceCounterControls\Chart.resx">
+      <DependentUpon>Chart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerformanceCounterControls\PerformanceCounterChart.resx">
+      <DependentUpon>PerformanceCounterChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerformanceCounterControls\PerformanceCounterForm.resx">
+      <DependentUpon>PerformanceCounterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerformanceCounterControls\PerformanceCounters.resx">
+      <DependentUpon>PerformanceCounters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessorAffinityForm.resx">
+      <DependentUpon>ProcessorAffinityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfessorForm.resx">
+      <DependentUpon>ProfessorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfScheduleForm.resx">
+      <DependentUpon>ProfScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultControls\ChangeRoomsDataForm.resx">
+      <DependentUpon>ChangeRoomsDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultControls\CheckListCellsTextDataForm.resx">
+      <DependentUpon>CheckListCellsTextDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultControls\GeneticAlgorithmSettingForm.resx">
+      <DependentUpon>GeneticAlgorithmSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultControls\OneFieldOfRoomForm.resx">
+      <DependentUpon>OneFieldOfRoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultControls\ResultForm.resx">
+      <DependentUpon>ResultForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultControls\ResultSettingForm.resx">
+      <DependentUpon>ResultSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultControls\ShowClassroomsScheduleForm.resx">
+      <DependentUpon>ShowClassroomsScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultControls\ShowGroupsScheduleForm.resx">
+      <DependentUpon>ShowGroupsScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultControls\ShowProfessorsScheduleForm.resx">
+      <DependentUpon>ShowProfessorsScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomForm.resx">
+      <DependentUpon>RoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectCourseForm.resx">
+      <DependentUpon>SelectCourseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TermSchemeForm.resx">
+      <DependentUpon>TermSchemeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ResultControls\ResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultControls\ResultForm.Designer.cs">
+      <DependentUpon>ResultForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomForm.Designer.cs">
+      <DependentUpon>RoomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectCourseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectCourseForm.Designer.cs">
+      <DependentUpon>SelectCourseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpannedDataGridView\DataGridViewCellExHelper.cs" />
+    <Compile Include="SpannedDataGridView\DataGridViewHelper.cs" />
+    <Compile Include="SpannedDataGridView\DataGridViewImageCellEx.cs" />
+    <Compile Include="SpannedDataGridView\DataGridViewTextBoxCellEx.cs" />
+    <Compile Include="SpannedDataGridView\ISpannedCell.cs" />
+    <Compile Include="TermSchemeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TermSchemeForm.Designer.cs">
+      <DependentUpon>TermSchemeForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Backup.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Backup_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Backup.mdf</DependentUpon>
+    </Content>
+    <Content Include="Resources\Help\MCS_Help.html" />
+    <Content Include="Resources\Lib\GemBox.Spreadsheet.dll" />
+    <Content Include="Resources\Lib\SpPerfChart.dll" />
+    <Content Include="ClassSchedule.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ClassSchedule_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>ClassSchedule.mdf</DependentUpon>
+    </Content>
+    <Content Include="IconButton.ico" />
+    <None Include="Resources\users.ico" />
+    <None Include="Resources\system_exit.png" />
+    <None Include="Resources\info.ico" />
+    <None Include="Resources\help.ico" />
+    <None Include="Resources\Downer.png" />
+    <None Include="Resources\Uper.png" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\unlock.png" />
+    <None Include="Resources\Convert.png" />
+    <None Include="Resources\app.png" />
+    <None Include="Resources\cut.png" />
+    <None Include="Resources\copy.png" />
+    <None Include="Resources\paste.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\327_Options_48x48_72.png" />
+    <None Include="Resources\Normal.png" />
+    <None Include="Resources\Mouse Over.png" />
+    <None Include="Resources\Mouse Down.png" />
+    <None Include="Resources\Disable.png" />
+    <None Include="Resources\Add.png" />
+    <None Include="Resources\ClassScheduleNormal.png" />
+    <None Include="Resources\ClassScheduleDown.png" />
+    <None Include="Resources\Branch.jpg" />
+    <None Include="Resources\TermScheme.jpg" />
+    <None Include="LINQ.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LINQ.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Export_Over.png" />
+    <None Include="Resources\Export_Normal.png" />
+    <None Include="Resources\Export_Down.png" />
+    <None Include="Resources\Export_Disable.png" />
+    <None Include="Resources\Import_Over.png" />
+    <None Include="Resources\Import_Normal.png" />
+    <None Include="Resources\Import_Down.png" />
+    <None Include="Resources\Import_Disable.png" />
+    <None Include="Resources\Create_classroom_icon.jpg" />
+    <None Include="Resources\groups.png" />
+    <None Include="Resources\Classroom.png" />
+    <None Include="Resources\course.jpg" />
+    <None Include="Resources\Professor.png" />
+    <None Include="Resources\file-export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.9.2">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express Edition SP2 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,66 @@
+E:\MakeClassSchedule\DisconnectDB\bin\Debug\DisconnectDB.exe
+E:\MakeClassSchedule\DisconnectDB\bin\Debug\DisconnectDB.pdb
+E:\MakeClassSchedule\DisconnectDB\obj\Debug\ResolveAssemblyReference.cache
+E:\MakeClassSchedule\DisconnectDB\obj\Debug\DisconnectDB.DisconnectForm.resources
+E:\MakeClassSchedule\DisconnectDB\obj\Debug\DisconnectDB.Properties.Resources.resources
+E:\MakeClassSchedule\DisconnectDB\obj\Debug\DisconnectDB.exe
+E:\MakeClassSchedule\DisconnectDB\obj\Debug\DisconnectDB.pdb
+E:\MakeClassSchedule\DisconnectDB\obj\Debug\GenerateResource-ResGen.read.1.tlog
+E:\MakeClassSchedule\DisconnectDB\obj\Debug\GenerateResource-ResGen.write.1.tlog
+E:\MakeClassSchedule\DisconnectDB\obj\Debug\GenerateResource.read.1.tlog
+E:\MakeClassSchedule\DisconnectDB\obj\Debug\GenerateResource.write.1.tlog
+D:\MakeClassSchedule\DisconnectDB\bin\Debug\DisconnectDB.exe
+D:\MakeClassSchedule\DisconnectDB\bin\Debug\DisconnectDB.pdb
+D:\MakeClassSchedule\DisconnectDB\obj\Debug\ResolveAssemblyReference.cache
+D:\MakeClassSchedule\DisconnectDB\obj\Debug\DisconnectDB.DisconnectForm.resources
+D:\MakeClassSchedule\DisconnectDB\obj\Debug\DisconnectDB.Properties.Resources.resources
+D:\MakeClassSchedule\DisconnectDB\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\MakeClassSchedule\DisconnectDB\obj\Debug\GenerateResource.read.1.tlog
+D:\MakeClassSchedule\DisconnectDB\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\MakeClassSchedule\DisconnectDB\obj\Debug\GenerateResource.write.1.tlog
+D:\MakeClassSchedule\DisconnectDB\obj\Debug\DisconnectDB.exe
+D:\MakeClassSchedule\DisconnectDB\obj\Debug\DisconnectDB.pdb
+D:\MakeClassSchedule\Source Code\DisconnectDB\bin\Debug\DisconnectDB.exe
+D:\MakeClassSchedule\Source Code\DisconnectDB\bin\Debug\DisconnectDB.pdb
+D:\MakeClassSchedule\Source Code\DisconnectDB\obj\Debug\ResolveAssemblyReference.cache
+D:\MakeClassSchedule\Source Code\DisconnectDB\obj\Debug\DisconnectDB.DisconnectForm.resources
+D:\MakeClassSchedule\Source Code\DisconnectDB\obj\Debug\DisconnectDB.Properties.Resources.resources
+D:\MakeClassSchedule\Source Code\DisconnectDB\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\MakeClassSchedule\Source Code\DisconnectDB\obj\Debug\GenerateResource.read.1.tlog
+D:\MakeClassSchedule\Source Code\DisconnectDB\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\MakeClassSchedule\Source Code\DisconnectDB\obj\Debug\GenerateResource.write.1.tlog
+D:\MakeClassSchedule\Source Code\DisconnectDB\obj\Debug\DisconnectDB.exe
+D:\MakeClassSchedule\Source Code\DisconnectDB\obj\Debug\DisconnectDB.pdb
+D:\Education\Darsi\Final Projects\MakeClassSchedule\SourceCode\DisconnectDB\bin\Debug\DisconnectDB.exe
+D:\Education\Darsi\Final Projects\MakeClassSchedule\SourceCode\DisconnectDB\bin\Debug\DisconnectDB.pdb
+D:\Education\Darsi\Final Projects\MakeClassSchedule\SourceCode\DisconnectDB\obj\Debug\ResolveAssemblyReference.cache
+D:\Education\Darsi\Final Projects\MakeClassSchedule\SourceCode\DisconnectDB\obj\Debug\DisconnectDB.DisconnectForm.resources
+D:\Education\Darsi\Final Projects\MakeClassSchedule\SourceCode\DisconnectDB\obj\Debug\DisconnectDB.Properties.Resources.resources
+D:\Education\Darsi\Final Projects\MakeClassSchedule\SourceCode\DisconnectDB\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\Education\Darsi\Final Projects\MakeClassSchedule\SourceCode\DisconnectDB\obj\Debug\GenerateResource.read.1.tlog
+D:\Education\Darsi\Final Projects\MakeClassSchedule\SourceCode\DisconnectDB\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\Education\Darsi\Final Projects\MakeClassSchedule\SourceCode\DisconnectDB\obj\Debug\GenerateResource.write.1.tlog
+D:\Education\Darsi\Final Projects\MakeClassSchedule\SourceCode\DisconnectDB\obj\Debug\DisconnectDB.exe
+D:\Education\Darsi\Final Projects\MakeClassSchedule\SourceCode\DisconnectDB\obj\Debug\DisconnectDB.pdb
+D:\MakeClassSchedule\SourceCode\DisconnectDB\bin\Debug\DisconnectDB.exe
+D:\MakeClassSchedule\SourceCode\DisconnectDB\bin\Debug\DisconnectDB.pdb
+D:\MakeClassSchedule\SourceCode\DisconnectDB\obj\Debug\DisconnectDB.DisconnectForm.resources
+D:\MakeClassSchedule\SourceCode\DisconnectDB\obj\Debug\DisconnectDB.Properties.Resources.resources
+D:\MakeClassSchedule\SourceCode\DisconnectDB\obj\Debug\DisconnectDB.csproj.GenerateResource.Cache
+D:\MakeClassSchedule\SourceCode\DisconnectDB\obj\Debug\DisconnectDB.exe
+D:\MakeClassSchedule\SourceCode\DisconnectDB\obj\Debug\DisconnectDB.pdb
+D:\Programming\Will Sent to GitHub\MakeClassSchedule\SourceCode\DisconnectDB\bin\Debug\DisconnectDB.exe
+D:\Programming\Will Sent to GitHub\MakeClassSchedule\SourceCode\DisconnectDB\bin\Debug\DisconnectDB.pdb
+D:\Programming\Will Sent to GitHub\MakeClassSchedule\SourceCode\DisconnectDB\obj\Debug\DisconnectDB.csprojResolveAssemblyReference.cache
+D:\Programming\Will Sent to GitHub\MakeClassSchedule\SourceCode\DisconnectDB\obj\Debug\DisconnectDB.DisconnectForm.resources
+D:\Programming\Will Sent to GitHub\MakeClassSchedule\SourceCode\DisconnectDB\obj\Debug\DisconnectDB.Properties.Resources.resources
+D:\Programming\Will Sent to GitHub\MakeClassSchedule\SourceCode\DisconnectDB\obj\Debug\DisconnectDB.csproj.GenerateResource.Cache
+D:\Programming\Will Sent to GitHub\MakeClassSchedule\SourceCode\DisconnectDB\obj\Debug\DisconnectDB.exe
+D:\Programming\Will Sent to GitHub\MakeClassSchedule\SourceCode\DisconnectDB\obj\Debug\DisconnectDB.pdb
+D:\Send Projects\MakeClassSchedule\src\DisconnectDB\bin\Debug\DisconnectDB.exe
+D:\Send Projects\MakeClassSchedule\src\DisconnectDB\bin\Debug\DisconnectDB.pdb
+D:\Send Projects\MakeClassSchedule\src\DisconnectDB\obj\Debug\DisconnectDB.DisconnectForm.resources
+D:\Send Projects\MakeClassSchedule\src\DisconnectDB\obj\Debug\DisconnectDB.Properties.Resources.resources
+D:\Send Projects\MakeClassSchedule\src\DisconnectDB\obj\Debug\DisconnectDB.csproj.GenerateResource.Cache
+D:\Send Projects\MakeClassSchedule\src\DisconnectDB\obj\Debug\DisconnectDB.exe
+D:\Send Projects\MakeClassSchedule\src\DisconnectDB\obj\Debug\DisconnectDB.pdb

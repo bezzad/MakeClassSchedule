@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Backup" Class="LINQDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Backup.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="MakeClassSchedule.Properties.Settings" SettingsPropertyName="BackupConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Branch" Member="Branches">
+    <Type Name="Branch">
+      <Column Name="ID_Branch" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Branch_Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Degree" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="Branch_Course" Member="Courses" ThisKey="ID_Branch" OtherKey="Branch_ID" Type="Course" />
+      <Association Name="Branch_Group" Member="Groups" ThisKey="ID_Branch" OtherKey="Branch_Selection" Type="Group" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Room_Type" Member="Room_Types">
+    <Type Name="Room_Type">
+      <Column Name="Type_Name" Type="System.String" DbType="NVarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Room_Type_Class" Member="Classes" ThisKey="Type_Name" OtherKey="RoomType" Type="Class" />
+      <Association Name="Room_Type_Room" Member="Rooms" ThisKey="Type_Name" OtherKey="Type_Room" Type="Room" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Class" Member="Classes">
+    <Type Name="Class">
+      <Column Name="Class_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Course_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Practical_unit" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Theory_unit" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RoomType" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="Class_Classroom_Time" Member="Classroom_Times" ThisKey="Class_ID" OtherKey="Class_ID" Type="Classroom_Time" />
+      <Association Name="Class_Group_ID_List" Member="Group_ID_Lists" ThisKey="Class_ID" OtherKey="Class_ID" Type="Group_ID_List" />
+      <Association Name="Class_Priority_Professor" Member="Priority_Professors" ThisKey="Class_ID" OtherKey="Class_ID" Type="Priority_Professor" />
+      <Association Name="Room_Type_Class" Member="Room_Type" ThisKey="RoomType" OtherKey="Type_Name" Type="Room_Type" IsForeignKey="true" />
+      <Association Name="Course_Class" Member="Course" ThisKey="Course_ID" OtherKey="Course_ID" Type="Course" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Classroom_Time" Member="Classroom_Times">
+    <Type Name="Classroom_Time">
+      <Column Name="Room_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Class_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Professor_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StartTime" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Duration" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Day_No" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Classroom_Time_New_GroupsPerClass" Member="New_GroupsPerClasses" ThisKey="Room_ID,Class_ID,StartTime,Day_No" OtherKey="Room_ID,Class_ID,StartTime,Day_No" Type="New_GroupsPerClass" />
+      <Association Name="Class_Classroom_Time" Member="Class" ThisKey="Class_ID" OtherKey="Class_ID" Type="Class" IsForeignKey="true" />
+      <Association Name="Professor_Classroom_Time" Member="Professor" ThisKey="Professor_ID" OtherKey="ID" Type="Professor" IsForeignKey="true" />
+      <Association Name="Room_Classroom_Time" Member="Room" ThisKey="Room_ID" OtherKey="Room_ID" Type="Room" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Course" Member="Courses">
+    <Type Name="Course">
+      <Column Name="Course_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Branch_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TermNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name_Course" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Type_Course" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CourseCode" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="TheoryUnitNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PracticalUnitNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InRequisite_CourseID" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="PreRequisite_CourseID" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="Course_Class" Member="Classes" ThisKey="Course_ID" OtherKey="Course_ID" Type="Class" />
+      <Association Name="Branch_Course" Member="Branch" ThisKey="Branch_ID" OtherKey="ID_Branch" Type="Branch" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Group_ID_List" Member="Group_ID_Lists">
+    <Type Name="Group_ID_List">
+      <Column Name="Group_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Class_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Class_Group_ID_List" Member="Class" ThisKey="Class_ID" OtherKey="Class_ID" Type="Class" IsForeignKey="true" />
+      <Association Name="Group_Group_ID_List" Member="Group" ThisKey="Group_ID" OtherKey="ID" Type="Group" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Groups" Member="Groups">
+    <Type Name="Group">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Semester_Entry_Year" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Semester_Entry_FS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Branch_Selection" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Size_No" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Group_Group_ID_List" Member="Group_ID_Lists" ThisKey="ID" OtherKey="Group_ID" Type="Group_ID_List" />
+      <Association Name="Group_New_GroupsPerClass" Member="New_GroupsPerClasses" ThisKey="ID" OtherKey="Group_ID" Type="New_GroupsPerClass" />
+      <Association Name="Branch_Group" Member="Branch" ThisKey="Branch_Selection" OtherKey="ID_Branch" Type="Branch" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.New_GroupsPerClass" Member="New_GroupsPerClasses">
+    <Type Name="New_GroupsPerClass">
+      <Column Name="Room_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Class_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StartTime" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Day_No" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Group_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Classroom_Time_New_GroupsPerClass" Member="Classroom_Time" ThisKey="Room_ID,Class_ID,StartTime,Day_No" OtherKey="Room_ID,Class_ID,StartTime,Day_No" Type="Classroom_Time" IsForeignKey="true" />
+      <Association Name="Group_New_GroupsPerClass" Member="Group" ThisKey="Group_ID" OtherKey="ID" Type="Group" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Priority_Professor" Member="Priority_Professors">
+    <Type Name="Priority_Professor">
+      <Column Name="Professor_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Class_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Priority" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Association Name="Class_Priority_Professor" Member="Class" ThisKey="Class_ID" OtherKey="Class_ID" Type="Class" IsForeignKey="true" />
+      <Association Name="Professor_Priority_Professor" Member="Professor" ThisKey="Professor_ID" OtherKey="ID" Type="Professor" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Professor" Member="Professors">
+    <Type Name="Professor">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name_Professor" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Branch" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="EducationDegree" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Schedule" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Professor_Classroom_Time" Member="Classroom_Times" ThisKey="ID" OtherKey="Professor_ID" Type="Classroom_Time" />
+      <Association Name="Professor_Priority_Professor" Member="Priority_Professors" ThisKey="ID" OtherKey="Professor_ID" Type="Priority_Professor" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Room" Member="Rooms">
+    <Type Name="Room">
+      <Column Name="Room_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name_Room" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Type_Room" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Size_No" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Room_Classroom_Time" Member="Classroom_Times" ThisKey="Room_ID" OtherKey="Room_ID" Type="Classroom_Time" />
+      <Association Name="Room_Type_Room" Member="Room_Type" ThisKey="Type_Room" OtherKey="Type_Name" Type="Room_Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.BranchDelete" Method="BranchDelete">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.RoomSave" Method="RoomSave">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Type" Parameter="type" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Size" Parameter="size" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.BranchEdit" Method="BranchEdit">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Degree" Parameter="degree" Type="System.String" DbType="NVarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.BranchSave" Method="BranchSave">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Degree" Parameter="degree" Type="System.String" DbType="NVarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.BranchSearchID" Method="BranchSearchID">
+    <Parameter Name="BranchID" Parameter="branchID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="BranchSearchIDResult">
+      <Column Name="ID_Branch" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Branch_Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Degree" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ClassDelete" Method="ClassDelete">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ClassEdit" Method="ClassEdit">
+    <Parameter Name="Class_ID" Parameter="class_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Course_ID" Parameter="course_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PU" Parameter="pU" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TU" Parameter="tU" Type="System.Int32" DbType="Int" />
+    <Parameter Name="RoomType" Parameter="roomType" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Classroom_TimeDelete" Method="Classroom_TimeDelete">
+    <Parameter Name="Room_ID" Parameter="room_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Class_ID" Parameter="class_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="StartTime" Parameter="startTime" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DayNo" Parameter="dayNo" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Classroom_TimeDeleteAll" Method="Classroom_TimeDeleteAll">
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Classroom_TimeDeleteClass" Method="Classroom_TimeDeleteClass">
+    <Parameter Name="ClassID" Parameter="classID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Classroom_TimeEdit" Method="Classroom_TimeEdit">
+    <Parameter Name="old_Room_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="new_Room_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="old_Class_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="new_Class_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="P_ID" Parameter="p_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="old_sTime" Type="System.Int32" DbType="Int" />
+    <Parameter Name="new_sTime" Type="System.Int32" DbType="Int" />
+    <Parameter Name="dur" Type="System.Int32" DbType="Int" />
+    <Parameter Name="old_Day" Type="System.Int32" DbType="Int" />
+    <Parameter Name="new_Day" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Classroom_TimeSave" Method="Classroom_TimeSave">
+    <Parameter Name="R_ID" Parameter="r_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="C_ID" Parameter="c_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="P_ID" Parameter="p_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="sTime" Type="System.Int32" DbType="Int" />
+    <Parameter Name="dur" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Day" Parameter="day" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ClassroomDeleteProf" Method="ClassroomDeleteProf">
+    <Parameter Name="Professor_ID" Parameter="professor_ID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ClassSave" Method="ClassSave">
+    <Parameter Name="Class_ID" Parameter="class_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Course_ID" Parameter="course_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PU" Parameter="pU" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TU" Parameter="tU" Type="System.Int32" DbType="Int" />
+    <Parameter Name="RoomType" Parameter="roomType" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CourseDelete" Method="CourseDelete">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CourseEdit" Method="CourseEdit">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="BranchID" Parameter="branchID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Term" Parameter="term" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Type" Parameter="type" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Code" Parameter="code" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="TheoryUN" Parameter="theoryUN" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PracticalUN" Parameter="practicalUN" Type="System.Int32" DbType="Int" />
+    <Parameter Name="InRCId" Parameter="inRCId" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="PreRCId" Parameter="preRCId" Type="System.String" DbType="NVarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CourseSave" Method="CourseSave">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="BranchID" Parameter="branchID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Term" Parameter="term" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Type" Parameter="type" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Code" Parameter="code" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="TheoryUN" Parameter="theoryUN" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PracticalUN" Parameter="practicalUN" Type="System.Int32" DbType="Int" />
+    <Parameter Name="InRCId" Parameter="inRCId" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="PreRCId" Parameter="preRCId" Type="System.String" DbType="NVarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CourseSearchID" Method="CourseSearchID">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <ElementType Name="CourseSearchIDResult">
+      <Column Name="Course_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Branch_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TermNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name_Course" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Type_Course" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CourseCode" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="TheoryUnitNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PracticalUnitNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InRequisite_CourseID" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="PreRequisite_CourseID" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CourseSearchNAME" Method="CourseSearchNAME">
+    <Parameter Name="NAME" Parameter="nAME" Type="System.String" DbType="NVarChar(100)" />
+    <ElementType Name="CourseSearchNAMEResult">
+      <Column Name="Course_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Branch_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TermNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name_Course" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Type_Course" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CourseCode" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="TheoryUnitNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PracticalUnitNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InRequisite_CourseID" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="PreRequisite_CourseID" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Group_ID_ListDeleteAll" Method="Group_ID_ListDeleteAll">
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Group_ID_ListDeleteClass" Method="Group_ID_ListDeleteClass">
+    <Parameter Name="ClassID" Parameter="classID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Group_ID_ListSave" Method="Group_ID_ListSave">
+    <Parameter Name="G_Id" Parameter="g_Id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="C_Id" Parameter="c_Id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.GroupsDelete" Method="GroupsDelete">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.GroupsEdit" Method="GroupsEdit">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SemesterEntryY" Parameter="semesterEntryY" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SemesterEntryB" Parameter="semesterEntryB" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="SelectedCourse" Parameter="selectedCourse" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Size" Parameter="size" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.GroupsSave" Method="GroupsSave">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SemesterEntryY" Parameter="semesterEntryY" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SemesterEntryB" Parameter="semesterEntryB" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="Branch_Selection" Parameter="branch_Selection" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Size" Parameter="size" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.New_GroupsPerClassDeleteAll" Method="New_GroupsPerClassDeleteAll">
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.New_GroupsPerClassDeleteByGroupID" Method="New_GroupsPerClassDeleteByGroupID">
+    <Parameter Name="Group_ID" Parameter="group_ID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.New_GroupsPerClassSave" Method="New_GroupsPerClassSave">
+    <Parameter Name="Room_ID" Parameter="room_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Class_ID" Parameter="class_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="sTime" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Day" Parameter="day" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Group_ID" Parameter="group_ID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Priority_ProfessorDelete" Method="Priority_ProfessorDelete">
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Priority_ProfessorDeleteClass" Method="Priority_ProfessorDeleteClass">
+    <Parameter Name="Class_ID" Parameter="class_ID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Priority_ProfessorSave" Method="Priority_ProfessorSave">
+    <Parameter Name="Professor_ID" Parameter="professor_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Class_ID" Parameter="class_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Priority" Parameter="priority" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ProfessorDelete" Method="ProfessorDelete">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ProfessorEdit" Method="ProfessorEdit">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Branch" Parameter="branch" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="ED" Parameter="eD" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="Schedule" Parameter="schedule" Type="System.String" DbType="Text" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ProfessorSave" Method="ProfessorSave">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Branch" Parameter="branch" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="EducationDegree" Parameter="educationDegree" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="Schedule" Parameter="schedule" Type="System.String" DbType="Text" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Room_TypeDelete" Method="Room_TypeDelete">
+    <Parameter Name="Type" Parameter="type" Type="System.String" DbType="NVarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Room_TypeSave" Method="Room_TypeSave">
+    <Parameter Name="Type" Parameter="type" Type="System.String" DbType="NVarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.RoomDelete" Method="RoomDelete">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.RoomEdit" Method="RoomEdit">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Type" Parameter="type" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Size" Parameter="size" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

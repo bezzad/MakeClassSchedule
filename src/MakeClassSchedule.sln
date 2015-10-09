@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeClassSchedule", "MakeClassSchedule\MakeClassSchedule.csproj", "{78E81624-EF41-4EC6-B47A-97F3307C0E9B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9518DCC1-4ACE-4EF9-9EC1-714826E6C5E4} = {9518DCC1-4ACE-4EF9-9EC1-714826E6C5E4}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisconnectDB", "DisconnectDB\DisconnectDB.csproj", "{9518DCC1-4ACE-4EF9-9EC1-714826E6C5E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78E81624-EF41-4EC6-B47A-97F3307C0E9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78E81624-EF41-4EC6-B47A-97F3307C0E9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78E81624-EF41-4EC6-B47A-97F3307C0E9B}.Debug|x86.ActiveCfg = Debug|x86
+		{78E81624-EF41-4EC6-B47A-97F3307C0E9B}.Debug|x86.Build.0 = Debug|x86
+		{78E81624-EF41-4EC6-B47A-97F3307C0E9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78E81624-EF41-4EC6-B47A-97F3307C0E9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78E81624-EF41-4EC6-B47A-97F3307C0E9B}.Release|x86.ActiveCfg = Release|x86
+		{78E81624-EF41-4EC6-B47A-97F3307C0E9B}.Release|x86.Build.0 = Release|x86
+		{9518DCC1-4ACE-4EF9-9EC1-714826E6C5E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9518DCC1-4ACE-4EF9-9EC1-714826E6C5E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9518DCC1-4ACE-4EF9-9EC1-714826E6C5E4}.Debug|x86.ActiveCfg = Debug|x86
+		{9518DCC1-4ACE-4EF9-9EC1-714826E6C5E4}.Debug|x86.Build.0 = Debug|x86
+		{9518DCC1-4ACE-4EF9-9EC1-714826E6C5E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9518DCC1-4ACE-4EF9-9EC1-714826E6C5E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9518DCC1-4ACE-4EF9-9EC1-714826E6C5E4}.Release|x86.ActiveCfg = Release|x86
+		{9518DCC1-4ACE-4EF9-9EC1-714826E6C5E4}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
