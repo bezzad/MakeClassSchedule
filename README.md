@@ -1,4 +1,5 @@
-# [Make Class Schedule](https://github.com/Behzadkhosravifar/MakeClassSchedule)
+# [![Make Class Schedule](https://raw.githubusercontent.com/Behzadkhosravifar/MakeClassSchedule/master/src/MakeClassSchedule/Resources/Help/MCS_Help/HelpHeader.png)](https://github.com/Behzadkhosravifar/MakeClassSchedule)
+
 --------------------
 [![Build status](https://ci.appveyor.com/api/projects/status/4cjm8ir7bswf6nse?svg=true)](https://ci.appveyor.com/project/Behzadkhosravifar/makeclassschedule)
 
