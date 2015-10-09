@@ -37,7 +37,8 @@ And, these two operations are repeated until the best chromosome reaches a fitne
 
 --------------------------------
 ### For More Information
-[**Welcome to WiKi**](https://github.com/Behzadkhosravifar/MakeClassSchedule/wiki/Welcome-to-the-Make-Class-Schedule)
+
+### [Read Make Class Schedule WiKi](https://github.com/Behzadkhosravifar/MakeClassSchedule/wiki/Welcome-to-the-Make-Class-Schedule)
 
 --------------------------------
 ### Feedback
