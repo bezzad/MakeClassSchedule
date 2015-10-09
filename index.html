@@ -1,0 +1,147 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/github-dark.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Makeclassschedule</title>
+  <meta name="description" content="Make university class schedule by Parallel Genetic Algorithm in C# WinForm">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Makeclassschedule</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Make university class schedule by Parallel Genetic Algorithm in C# WinForm</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/Behzadkhosravifar/MakeClassSchedule/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/Behzadkhosravifar/MakeClassSchedule/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/Behzadkhosravifar/MakeClassSchedule" class="code">View Makeclassschedule on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>
+<a id="" class="anchor" href="#" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://raw.githubusercontent.com/Behzadkhosravifar/MakeClassSchedule/master/src/MakeClassSchedule/Resources/Help/MCS_Help.html"><img src="https://raw.githubusercontent.com/Behzadkhosravifar/MakeClassSchedule/master/src/MakeClassSchedule/Resources/Help/MCS_Help/HelpHeader.png" alt="Make Class Schedule"></a>
+</h1>
+
+<hr>
+
+<p><a href="https://ci.appveyor.com/project/Behzadkhosravifar/makeclassschedule"><img src="https://ci.appveyor.com/api/projects/status/4cjm8ir7bswf6nse?svg=true" alt="Build status"></a></p>
+
+<h3>
+<a id="welcome" class="anchor" href="#welcome" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome</h3>
+
+<p>Thank you for choosing Make Class Schedule ! <br>
+Make Class Schedule is one of those NP hard problems. The problem can be solved using a heuristic search algorithm to find the optimal solution, but it only works for simple cases. For more complex inputs and requirements, finding a considerably good solution can take a while, or it may be impossible. This is where genetic algorithms come in to the game. <br>
+In this article, I assume that you are familiar with the basic concepts of genetic algorithms, and I won't describe them in detail because it has been done so many times before.
+When you make a class schedule, you must take into consideration many requirements (number of professors, students, classes and classrooms, size of classroom, laboratory equipment in classroom, and many others). These requirements can be divided into several groups by their importance. Hard requirements (if you break one of these, then the schedule is infeasible):</p>
+
+<ul>
+<li>A class can be placed only in a spare classroom.</li>
+<li>No professor or student group can have more then one class at a time.</li>
+<li>A classroom must have enough seats to accommodate all students.</li>
+<li>To place a class in a classroom, the classroom must have laboratory equipment (computers, in our case) if the class requires it.</li>
+</ul>
+
+<p>Some soft requirements (can be broken, but the schedule is still feasible):</p>
+
+<ul>
+<li>Preferred time of class by professors.</li>
+<li>Preferred classroom by professors.</li>
+<li>Distribution (in time or space) of classes for student groups or professors.</li>
+</ul>
+
+<p>Hard and soft requirements, of course, depend on the situation.</p>
+
+<p><strong>Algorithm</strong></p>
+
+<p>The genetic algorithm is fairly simple. For each generation, it performs two basic operations:</p>
+
+<ol>
+<li>Randomly selects N pairs of parents from the current population and produces N new chromosomes by performing a crossover operation on the pair of parents.</li>
+<li>Randomly selects N chromosomes from the current population and replaces them with new ones. The algorithm doesn't select chromosomes for replacement if it is among the best chromosomes in the population.</li>
+</ol>
+
+<p>And, these two operations are repeated until the best chromosome reaches a fitness value equal to 1 (meaning that all classes in the schedule meet the requirement). As mentioned before, the genetic algorithm keeps track of the M best chromosomes in the population, and guarantees that they are not going to be replaced while they are among the best chromosomes.</p>
+
+<hr>
+
+<h3>
+<a id="feedback" class="anchor" href="#feedback" aria-hidden="true"><span class="octicon octicon-link"></span></a>Feedback</h3>
+
+<p>Make Class Schedule v1.0.0.0 programmed and designed by Mr. Behzad Khosravi Far.
+You can obtain free support for Make Class Schedule. You may email any questions/suggestions to:
+<a href="mailto:Behzad.khosravifar@gmail.com">Behzad.khosravifar@gmail.com</a></p>
+
+<p>For contact him use this phone number: +989149149202
+or use following Email: <a href="mailto:Behzadkh@Hotmail.com">Behzadkh@Hotmail.com</a></p>
+
+<hr>
+
+<h3>
+<a id="license-information------" class="anchor" href="#license-information------" aria-hidden="true"><span class="octicon octicon-link"></span></a>LICENSE INFORMATION      <a href="http://opensource.org/licenses/GPL-3.0.html"><img src="http://opensource.org/trademarks/opensource/OSI-Approved-License-100x137.png" alt="OSI-Approved-License-100x137.png"></a>
+</h3>
+
+<p>This software is open source, licensed under the GNU General Public License, Version 3.0.
+See <a href="http://opensource.org/licenses/GPL-3.0.html">GPL-3.0</a> for details.
+This Class Library creates a way of handling structured exception handling,
+inheriting from the Exception class gives us access to many method
+we wouldn't otherwise have access to</p>
+
+<p>Copyright (C) 2015-2016 <a href="mailto:Behzad.Khosravifar@Gmail.com">Behzad Khosravifar</a></p>
+
+<p>This program published by the Free Software Foundation,
+either version 1.0.1 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/Behzadkhosravifar" class="avatar"><img src="https://avatars3.githubusercontent.com/u/10928710?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/Behzadkhosravifar">Behzadkhosravifar</a> maintains <a href="https://github.com/Behzadkhosravifar/MakeClassSchedule">Makeclassschedule</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/Behzadkhosravifar/MakeClassSchedule/tarball/master" class="tar">tar</a><a href="https://github.com/Behzadkhosravifar/MakeClassSchedule/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-68659108-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+</body>
+</html>
