@@ -1,6 +1,6 @@
 # [![Make Class Schedule](https://raw.githubusercontent.com/Behzadkhosravifar/MakeClassSchedule/master/src/MakeClassSchedule/Resources/Help/MCS_Help/HelpHeader.png)][1]
 
-[1]: https://raw.githubusercontent.com/Behzadkhosravifar/MakeClassSchedule/master/src/MakeClassSchedule/Resources/Help/MCS_Help.html
+[1]: http://behzadkhosravifar.github.io/MakeClassSchedule/
 
 --------------------
 [![Build status](https://ci.appveyor.com/api/projects/status/4cjm8ir7bswf6nse?svg=true)](https://ci.appveyor.com/project/Behzadkhosravifar/makeclassschedule)
@@ -34,6 +34,10 @@ The genetic algorithm is fairly simple. For each generation, it performs two bas
 2. Randomly selects N chromosomes from the current population and replaces them with new ones. The algorithm doesn't select chromosomes for replacement if it is among the best chromosomes in the population.
 
 And, these two operations are repeated until the best chromosome reaches a fitness value equal to 1 (meaning that all classes in the schedule meet the requirement). As mentioned before, the genetic algorithm keeps track of the M best chromosomes in the population, and guarantees that they are not going to be replaced while they are among the best chromosomes.
+
+--------------------------------
+### For More Information
+[**Welcome to WiKi**](https://github.com/Behzadkhosravifar/MakeClassSchedule/wiki/Welcome-to-the-Make-Class-Schedule)
 
 --------------------------------
 ### Feedback
