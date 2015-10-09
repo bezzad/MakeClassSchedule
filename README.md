@@ -1,15 +1,15 @@
-# [![Make Class Schedule](https://raw.githubusercontent.com/Behzadkhosravifar/MakeClassSchedule/master/src/MakeClassSchedule/Resources/Help/MCS_Help/HelpHeader.png)](https://github.com/Behzadkhosravifar/MakeClassSchedule)
+# [![Make Class Schedule](https://raw.githubusercontent.com/Behzadkhosravifar/MakeClassSchedule/master/src/MakeClassSchedule/Resources/Help/MCS_Help/HelpHeader.png)][1]
+
+[1]: https://raw.githubusercontent.com/Behzadkhosravifar/MakeClassSchedule/master/src/MakeClassSchedule/Resources/Help/MCS_Help.html
 
 --------------------
 [![Build status](https://ci.appveyor.com/api/projects/status/4cjm8ir7bswf6nse?svg=true)](https://ci.appveyor.com/project/Behzadkhosravifar/makeclassschedule)
 
-Make university class schedule by Parallel Genetic Algorithm in C# WinForm.
-
---------------------------------
 ### Welcome
 
-Thank you for choosing Make Class Schedule !
-Make Class Schedule is one of those NP hard problems. The problem can be solved using a heuristic search algorithm to find the optimal solution, but it only works for simple cases. For more complex inputs and requirements, finding a considerably good solution can take a while, or it may be impossible. This is where genetic algorithms come in to the game. In this article, I assume that you are familiar with the basic concepts of genetic algorithms, and I won't describe them in detail because it has been done so many times before.
+Thank you for choosing Make Class Schedule ! <br/>
+Make Class Schedule is one of those NP hard problems. The problem can be solved using a heuristic search algorithm to find the optimal solution, but it only works for simple cases. For more complex inputs and requirements, finding a considerably good solution can take a while, or it may be impossible. This is where genetic algorithms come in to the game. <br/>
+In this article, I assume that you are familiar with the basic concepts of genetic algorithms, and I won't describe them in detail because it has been done so many times before.
 When you make a class schedule, you must take into consideration many requirements (number of professors, students, classes and classrooms, size of classroom, laboratory equipment in classroom, and many others). These requirements can be divided into several groups by their importance. Hard requirements (if you break one of these, then the schedule is infeasible):
 
 * A class can be placed only in a spare classroom.
