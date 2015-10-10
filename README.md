@@ -35,6 +35,10 @@ The genetic algorithm is fairly simple. For each generation, it performs two bas
 
 And, these two operations are repeated until the best chromosome reaches a fitness value equal to 1 (meaning that all classes in the schedule meet the requirement). As mentioned before, the genetic algorithm keeps track of the M best chromosomes in the population, and guarantees that they are not going to be replaced while they are among the best chromosomes.
 
+Application main screen:
+
+[![MakeClassSchedule.jpg](https://raw.githubusercontent.com/Behzadkhosravifar/MakeClassSchedule/master/src/MakeClassSchedule/Resources/Help/MCS_Help/MakeClassSchedule.jpg)](https://github.com/Behzadkhosravifar/MakeClassSchedule/wiki/Welcome-to-the-Make-Class-Schedule)
+
 --------------------------------
 ### For More Information
 
