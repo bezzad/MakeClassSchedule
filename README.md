@@ -5,7 +5,7 @@
 --------------------
 [![Build status](https://ci.appveyor.com/api/projects/status/4cjm8ir7bswf6nse?svg=true)](https://ci.appveyor.com/project/Behzadkhosravifar/makeclassschedule)
 
-### Welcome
+# Make Class Schedule (Timetable generator) using Genetic Algorithms
 
 Thank you for choosing Make Class Schedule ! <br/>
 Make Class Schedule is one of those NP hard problems. The problem can be solved using a heuristic search algorithm to find the optimal solution, but it only works for simple cases. For more complex inputs and requirements, finding a considerably good solution can take a while, or it may be impossible. This is where genetic algorithms come in to the game. <br/>
