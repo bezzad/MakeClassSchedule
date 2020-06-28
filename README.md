@@ -51,8 +51,7 @@ Make Class Schedule v1.0.0.0 programmed and designed by Mr. Behzad Khosravi Far.
 You can obtain free support for Make Class Schedule. You may email any questions/suggestions to:
 Behzad.khosravifar@gmail.com
  
-For contact him use this phone number: +989149149202
-or use following Email: Behzadkh@Hotmail.com
+For contact use following Email: Behzadkh@Hotmail.com
 
 
 --------------------------
